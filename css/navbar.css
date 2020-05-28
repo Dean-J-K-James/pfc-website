@@ -1,0 +1,38 @@
+#navbar {
+    background-color: rgb(241, 241, 241);
+    position        : absolute;
+    height          : 44px;
+    width           : 100%;
+    display         : flex;
+    justify-content : space-between;
+    padding         : 2px 8px;
+}
+
+#navbar .divider {
+    float: left;
+    flex : 1 1 auto;
+}
+
+#navbar input {
+    background-color: rgb(241, 241, 241);
+    border          : none;
+    color           : rgb(051, 051, 051);
+    font-size       : 12px;
+    font-weight     : bold;
+    text-align      : center;
+    cursor          : pointer;
+    margin          : 2px;
+    height          : 36px;
+}
+
+#navbar input:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+#navbar input[type="button"] {
+    padding: 00px 12px;
+}
+
+#navbar input[type="image"] {
+    /* width: 40px; */
+}
