@@ -3,30 +3,95 @@
 
 <head>
     <!-- Page Information -->
-    <title>Pangean Flying Cactus</title>
+    <title>Phasmophobia Randomiser</title>
     <meta charset="utf-8" />
 
     <!-- Styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
-    <!--  -->
-    <div id="navbar">
+    <div class="container-fluid bg-primary py-1">
+
+
+        <div class="container bg-success p-3 my-3">
+
+            <div class="container bg-secondary p-3 my-0">
+                <h2>Phasmophobia Randomiser</h2>
+                <h5>To get started, create a challenge code. Either paste an existing one in, or press randomise to make a new one.</h5>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Recipient's username" readonly>
+                    <div class="input-group-append">
+                        <button class="btn btn-warning" type="button">Randomise</button>
+                        <button class="btn btn-warning" type="button">Copy</button>
+                        <button class="btn btn-warning" type="button">Paste</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container bg-success p-3 my-3">
+            <div class="container bg-secondary p-3 my-0">
+                <h2>Lights</h2>
+                <h5>Choose which item should be your primary source of light. All other light sources are banned.
+                    Glowsticks are always allowed.</h5>
+                <div class="form-group m-0">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Flashlight</option>
+                        <option>Strong Flashlight</option>
+                        <option>UV Light</option>
+                        <option>Candle</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="container bg-secondary p-3 my-3">
+                <h2>Temperature</h2>
+                <h5>Are you allowed to use a thermometer? Disabling makes it harder to find the ghost, but it is still
+                    possible determine whether it is freezing or not.</h5>
+                <div class="form-group m-0">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="container bg-secondary p-3 my-3">
+                <h2>Lockdown</h2>
+                <h5>Are you allowed to leave and re-enter the house? If no, you must gain all evidence before leaving
+                    the building. Checking the camera must come last.</h5>
+                <div class="form-group m-0">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="container bg-secondary p-3 my-0">
+                <h2>Banned Evidence</h2>
+                <h5>The following item is banned from use. The only way to gain the evidence the item is supposed to be
+                    used for is to rule out all other evidence.</h5>
+                <div class="form-group m-0">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>EMF Reader</option>
+                        <option>Spirit Box</option>
+                        <option>Ghost Writing Book</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
 
         
-        <!--  -->
-        <div class="divider"></div>
-        <input type="button" id="btn_view_norm" class="isviewactive" value="Home" />
-        <input type="button" id="btn_view_norm" class="isviewactive" value="Our Games" />
-        <input type="button" id="btn_view_norm" class="isviewactive" value="About Us" />
 
-
-        <!--  -->
-        <div class="divider"></div>
     </div>
-
 </body>
 
 </html>
