@@ -16,82 +16,102 @@
 
 <body>
 
-    <div class="container-fluid bg-primary py-1">
+    <!-- <div class="container-fluid bg-primary py-1"> -->
 
 
-        <div class="container bg-success p-3 my-3">
+    <div class="container container-parent p-0 my-3">
 
-            <div class="container bg-secondary p-3 my-0">
-                <h2>Phasmophobia Randomiser</h2>
-                <h5>To get started, create a challenge code. Either paste an existing one in, or press randomise to make a new one.</h5>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Recipient's username" readonly>
-                    <div class="input-group-append">
-                        <button class="btn btn-warning" type="button">Randomise</button>
-                        <button class="btn btn-warning" type="button">Copy</button>
-                        <button class="btn btn-warning" type="button">Paste</button>
-                    </div>
-                </div>
+        <div class="container p-3">
+            <h2>Phasmophobia Randomiser</h2>
+            <h5>To get started, create a challenge code. Either paste an existing one in, or press randomise to make a
+                new one.</h5>
+            <input type="text" class="input-field" placeholder="NOT YET IMPLEMENTED" readonly>
+
+            <button id="btn-randomise" class="btn btn-field mt-2" type="button">Randomise</button>
+        </div>
+    </div>
+
+    <div class="container container-parent p-0 my-3">
+        <div class="container p-3">
+            <h2>Lights</h2>
+            <h5>Choose which item should be your primary source of light. All other light sources are banned.
+                Glowsticks are always allowed.</h5>
+            <div class="form-group m-0">
+                <select class="input-field randomise" id="asdf">
+                    <option value="0">Flashlight</option>
+                    <option value="1">Strong Flashlight</option>
+                    <option value="2">UV Light</option>
+                    <option value="3">Candle</option>
+                </select>
             </div>
         </div>
 
-        <div class="container bg-success p-3 my-3">
-            <div class="container bg-secondary p-3 my-0">
-                <h2>Lights</h2>
-                <h5>Choose which item should be your primary source of light. All other light sources are banned.
-                    Glowsticks are always allowed.</h5>
-                <div class="form-group m-0">
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Flashlight</option>
-                        <option>Strong Flashlight</option>
-                        <option>UV Light</option>
-                        <option>Candle</option>
-                    </select>
-                </div>
+        <div class="container p-3">
+            <h2>Temperature</h2>
+            <h5>Are you allowed to use a thermometer? Disabling makes it harder to find the ghost, but it is still
+                possible determine whether it is freezing or not.</h5>
+            <div class="form-group m-0">
+                <select class="input-field randomise" id="tefh">
+                    <option value="0">Yes</option>
+                    <option value="1">No</option>
+                </select>
             </div>
-
-            <div class="container bg-secondary p-3 my-3">
-                <h2>Temperature</h2>
-                <h5>Are you allowed to use a thermometer? Disabling makes it harder to find the ghost, but it is still
-                    possible determine whether it is freezing or not.</h5>
-                <div class="form-group m-0">
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Yes</option>
-                        <option>No</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="container bg-secondary p-3 my-3">
-                <h2>Lockdown</h2>
-                <h5>Are you allowed to leave and re-enter the house? If no, you must gain all evidence before leaving
-                    the building. Checking the camera must come last.</h5>
-                <div class="form-group m-0">
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Yes</option>
-                        <option>No</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="container bg-secondary p-3 my-0">
-                <h2>Banned Evidence</h2>
-                <h5>The following item is banned from use. The only way to gain the evidence the item is supposed to be
-                    used for is to rule out all other evidence.</h5>
-                <div class="form-group m-0">
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>EMF Reader</option>
-                        <option>Spirit Box</option>
-                        <option>Ghost Writing Book</option>
-                    </select>
-                </div>
-            </div>
-
         </div>
 
-        
+        <div class="container p-3">
+            <h2>Lockdown</h2>
+            <h5>Are you allowed to leave and re-enter the house? If no, you must gain all evidence before leaving
+                the building. Checking the camera must come last.</h5>
+            <div class="form-group m-0">
+                <select class="input-field randomise" id="hyuj">
+                    <option value="0">Yes</option>
+                    <option value="1">No</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container p-3">
+            <h2>Doors</h2>
+            <h5>Are you allowed to open doors? If no, you are not allowed to open doors that lead to individual rooms.
+                Only doors that lead to hallways or other map sections can be opened.</h5>
+            <div class="form-group m-0">
+                <select class="input-field randomise" id="ksij">
+                    <option value="0">Yes</option>
+                    <option value="1">No</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container p-3">
+            <h2>Radio</h2>
+            <h5>Are you allowed to open use the radio and global chat features?</h5>
+            <div class="form-group m-0">
+                <select class="input-field randomise" id="srmt">
+                    <option value="0">Yes</option>
+                    <option value="1">No</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container p-3">
+            <h2>Banned Evidence</h2>
+            <h5>The following item is banned from use. The only way to gain the evidence the item is supposed to be
+                used for is to rule out all other evidence.</h5>
+            <div class="form-group m-0">
+                <select class="input-field randomise" id="juws">
+                    <option value="0">EMF Reader</option>
+                    <option value="1">Spirit Box</option>
+                    <option value="2">Ghost Writing Book</option>
+                </select>
+            </div>
+        </div>
 
     </div>
+
+    <script src="js/randomiser.js"></script>
+
+
+    <!-- </div> -->
 </body>
 
 </html>
