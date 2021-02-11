@@ -21,6 +21,7 @@
 
     <div class="container container-parent p-0 my-3">
 
+
         <div class="container p-3">
             <h2>Phasmophobia Randomiser</h2>
             <h5>To get started, create a challenge code. Either paste an existing one in, or press randomise to make a
@@ -32,101 +33,149 @@
     </div>
 
     <div class="container container-parent p-0 my-3">
-        <div class="container p-3">
-            <h2>Lights</h2>
-            <h5>Choose which item should be your primary source of light. All other light sources are banned.
-                Glowsticks are always allowed.</h5>
-            <div class="form-group m-0">
-                <select class="input-field randomise" id="asdf">
-                    <option value="0">Flashlight</option>
-                    <option value="1">Strong Flashlight</option>
-                    <option value="2">UV Light</option>
-                    <option value="3">Candle</option>
-                </select>
+        <div class="card-deck p-0 m-0">
+            <div class="card bg-transparent border-0 p-0 m-3">
+                <div class="card-body p-0">
+                    <h2>Lights</h2>
+                    <h5>Choose which item should be your primary source of light. All other light sources are banned.
+                        Glowsticks are always allowed.</h5>
+                </div>
+                <div class="card-footer p-0">
+                    <select class="input-field randomise" id="asdf">
+                        <option value="0">Flashlight</option>
+                        <option value="1">Strong Flashlight</option>
+                        <option value="2">UV Light</option>
+                        <option value="3">Candle</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card bg-transparent border-0 p-0 m-3">
+                <div class="card-body p-0">
+                    <h2>Temperature</h2>
+                    <h5>Are you allowed to use a thermometer? Disabling makes it harder to find the ghost, but it is
+                        still possible determine whether it is freezing or not.</h5>
+                </div>
+                <div class="card-footer p-0">
+                    <select class="input-field randomise" id="tefh">
+                        <option value="0">Yes</option>
+                        <option value="1">No</option>
+                    </select>
+                </div>
             </div>
         </div>
-
-        <div class="container p-3">
-            <h2>Temperature</h2>
-            <h5>Are you allowed to use a thermometer? Disabling makes it harder to find the ghost, but it is still
-                possible determine whether it is freezing or not.</h5>
-            <div class="form-group m-0">
-                <select class="input-field randomise" id="tefh">
-                    <option value="0">Yes</option>
-                    <option value="1">No</option>
-                </select>
+        <div class="card-deck p-0 m-0">
+            <div class="card bg-transparent border-0 p-0 m-3">
+                <div class="card-body p-0">
+                    <h2>Lockdown</h2>
+                    <h5>You must stay in the house! When you leave, you cannot re-enter. Collect as much evidence as you
+                        can before leaving.</h5>
+                </div>
+                <div class="card-footer p-0">
+                    <select class="input-field randomise" id="hyuj">
+                        <option value="0">Yes</option>
+                        <option value="1">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card bg-transparent border-0 p-0 m-3">
+                <div class="card-body p-0">
+                    <h2>Closets/ Containers</h2>
+                    <h5>Are you allowed to hide in closets and containers?</h5>
+                </div>
+                <div class="card-footer p-0">
+                    <select class="input-field randomise" id="yhwx">
+                        <option value="0">Yes</option>
+                        <option value="1">No</option>
+                    </select>
+                </div>
             </div>
         </div>
-
-        <div class="container p-3">
-            <h2>Lockdown</h2>
-            <h5>You must stay in the house! When you leave, you cannot re-enter. Collect as much evidence as you can before leaving.</h5>
-            <div class="form-group m-0">
-                <select class="input-field randomise" id="hyuj">
-                    <option value="0">Yes</option>
-                    <option value="1">No</option>
-                </select>
+        <div class="card-deck p-0 m-0">
+            <div class="card bg-transparent border-0 p-0 m-3">
+                <div class="card-body p-0">
+                    <h2>Doors</h2>
+                    <h5>What doors can you interact with? This does not apply to doors that lead to further sections of
+                        the map, such as hallways.</h5>
+                </div>
+                <div class="card-footer p-0">
+                    <select class="input-field randomise" id="ksij">
+                        <option value="0">All doors</option>
+                        <option value="1">Can only use doors the ghost has opened</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card bg-transparent border-0 p-0 m-3">
+                <div class="card-body p-0">
+                    <h2>Power</h2>
+                    <h5>Can you turn the power on?</h5>
+                </div>
+                <div class="card-footer p-0">
+                    <select class="input-field randomise" id="hemo">
+                        <option value="0">Yes</option>
+                        <option value="1">No</option>
+                    </select>
+                </div>
             </div>
         </div>
-
-        <div class="container p-3">
-            <h2>Closets/ Containers</h2>
-            <h5>Are you allowed to hide in closets and containers?</h5>
-            <div class="form-group m-0">
-                <select class="input-field randomise" id="yhwx">
-                    <option value="0">Yes</option>
-                    <option value="1">No</option>
-                </select>
+        <div class="card-deck p-0 m-0">
+            <div class="card bg-transparent border-0 p-0 m-3">
+                <div class="card-body p-0">
+                    <h2>Radio</h2>
+                    <h5>Are you allowed to open use the radio and global chat features?</h5>
+                </div>
+                <div class="card-footer p-0">
+                    <select class="input-field randomise" id="srmt">
+                        <option value="0">Yes</option>
+                        <option value="1">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card bg-transparent border-0 p-0 m-3">
+                <div class="card-body p-0">
+                    <h2>Banned Evidence</h2>
+                    <h5>The following item is banned from use. The only way to gain the evidence the item is supposed to
+                        be used for is to rule out all other evidence.</h5>
+                </div>
+                <div class="card-footer p-0">
+                    <select class="input-field randomise" id="juws">
+                        <option value="0">EMF Reader</option>
+                        <option value="1">Spirit Box</option>
+                        <option value="2">Ghost Writing Book</option>
+                    </select>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="container p-3">
-            <h2>Doors</h2>
-            <h5>Are you allowed to open doors? If no, you are not allowed to open doors that lead to individual rooms.
-                Only doors that lead to hallways or other map sections can be opened.</h5>
-            <div class="form-group m-0">
-                <select class="input-field randomise" id="ksij">
-                    <option value="0">Yes</option>
-                    <option value="1">No</option>
-                </select>
+    <div class="container container-parent p-0 my-3">
+        <div class="card-deck p-0 m-0">
+            <div class="card bg-transparent border-0 p-0 m-3">
+                <div class="card-body p-0">
+                    <h2>Challenge #1</h2>
+                    <h5>You cannot leave until you complete this challenge.</h5>
+                </div>
+                <div class="card-footer p-0">
+                    <select class="input-field randomise" id="pisz">
+                        <option value="0">No Challenge</option>
+                        <option value="1">Picture of the bone.</option>
+                        <option value="2">Picture of the ghost.</option>
+                        <option value="3">Picture of the ghost and player next to each other.</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card bg-transparent border-0 p-0 m-3">
+                <div class="card-body p-0">
+                    <h2>Challenge #2</h2>
+                    <h5>You cannot leave until you complete this challenge.</h5>
+                </div>
+                <div class="card-footer p-0">
+                    <select class="input-field randomise" id="wjfm">
+                        <option value="0">No Challenge</option>
+                        <option value="1">Survive a hunt in the ghost room.</option>
+                    </select>
+                </div>
             </div>
         </div>
-
-        <div class="container p-3">
-            <h2>Power</h2>
-            <h5>Can you turn the power on?</h5>
-            <div class="form-group m-0">
-                <select class="input-field randomise" id="hemo">
-                    <option value="0">Yes</option>
-                    <option value="1">No</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="container p-3">
-            <h2>Radio</h2>
-            <h5>Are you allowed to open use the radio and global chat features?</h5>
-            <div class="form-group m-0">
-                <select class="input-field randomise" id="srmt">
-                    <option value="0">Yes</option>
-                    <option value="1">No</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="container p-3">
-            <h2>Banned Evidence</h2>
-            <h5>The following item is banned from use. The only way to gain the evidence the item is supposed to be
-                used for is to rule out all other evidence.</h5>
-            <div class="form-group m-0">
-                <select class="input-field randomise" id="juws">
-                    <option value="0">EMF Reader</option>
-                    <option value="1">Spirit Box</option>
-                    <option value="2">Ghost Writing Book</option>
-                </select>
-            </div>
-        </div>
-
     </div>
 
     <script src="js/randomiser.js"></script>
